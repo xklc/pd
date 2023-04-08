@@ -17,6 +17,11 @@ using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace pd
 {
+    //原始公钥:MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCobEkviCWE3J2NFo5E2UQGlJCkUnoylStfmEitbXaMrpOhm0QRYlXMz42i0/WslnY6qV3rb4Q9sJP5Qxg49Zy4HGoFCv6UGnWJtt5k34hd10+jsbjCw3NEMnW/NCu2dAUNLTs9yh1WwXnU5551KgR9FQ9Gp3hZN/AF/9vYewmWoQIDAQAB
+    //crack公钥:MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDF6AOIu437LKgCp0KM5U3NWqT4djZM5NBnhmsQhDWqHC88SuUo41Jyr1ryqwzgAQTCaRMNwjhyy+o3Wson0ejb5QvXF6VBHKNfN8+oBWPUKuxQQ5ypUgUJO4fAXcmra/Zg0J7F3O109t4Yc2Di+qghjIGq11JkTjmSRDMsgZNQpwIDAQAB
+
+    //1. biz\papercut\pcng\service 目录下LicenseManager.class和LicenseUtils.class反编译并替换上述的密钥后重新编译
+    //or D:\workdir\software\HxD x64.exe
     public partial class Form1 : Form
     {
         private Dictionary<string, List<string>> dtMap = new Dictionary<string, List<string>>();
@@ -178,13 +183,13 @@ namespace pd
                     return;
                 }
 
-                if (!isEnglish(textBox2.Text))
-                {
-                    MessageBox.Show("Customer Name must be number, charactor or dot");
-                    textBox2.Focus();
-                    this.Cursor = Cursors.Default;
-                    return;
-                }
+                //if (!isEnglish(textBox2.Text))
+                //{
+                //    MessageBox.Show("Customer Name must be number, charactor or dot");
+                //    textBox2.Focus();
+                //    this.Cursor = Cursors.Default;
+                //    return;
+                //}
 
                 long et = 1690464318000; //2/7/15 14:00:00            
                 long currentMillis = getCurrentMillis(DateTime.Now.Ticks);
