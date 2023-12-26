@@ -253,8 +253,15 @@ namespace pd
                 {
                     userLicensed = checkBox1.Text;
                 }
+
                 //release-stations-licensed
 
+
+                //site-servers-licensed
+                if (checkBox5.Checked)
+                {
+                    siteServersLicensed = checkBox5.Text;
+                }
 
                 //device info list
                 Dictionary<string, string> devList = new Dictionary<string, string>();
