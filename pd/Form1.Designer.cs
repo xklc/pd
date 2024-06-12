@@ -178,6 +178,8 @@
             this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Items.AddRange(new object[] {
+            "18",
+            "19",
             "20",
             "21",
             "22",
